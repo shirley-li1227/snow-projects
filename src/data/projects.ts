@@ -24,4 +24,13 @@ export const projects: Project[] = [
     techStack: ["React", "TypeScript", "Framer Motion"],
     link: "https://todo-list-xi-topaz.vercel.app/",
   },
+  {
+    name: "Markdown 笔记应用",
+    image:
+      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "一个基于 React + TypeScript + Vite 构建的 Markdown 笔记应用，支持笔记管理、实时预览和代码高亮，适合学习记录、技术文档草稿和日常笔记整理。",
+    techStack: ["React", "TypeScript", "Vite", "Markdown"],
+    link: "https://markdown-note-nu.vercel.app/",
+  },
 ];
