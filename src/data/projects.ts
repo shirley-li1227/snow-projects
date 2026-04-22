@@ -41,4 +41,13 @@ export const projects: Project[] = [
     techStack: ["React", "TypeScript", "Vite"],
     link: "https://pomodoro-iota-lovat.vercel.app/",
   },
+  {
+    name: "移动端天气应用",
+    image:
+      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "一个基于 React + TypeScript + Vite 的移动端风格天气应用，支持城市查询、定位天气、未来 5 天趋势和收藏城市快捷查询。天气数据：OpenWeatherMap API。",
+    techStack: ["React", "TypeScript", "Vite", "OpenWeatherMap API"],
+    link: "https://weather-one-smoky.vercel.app/",
+  },
 ];
