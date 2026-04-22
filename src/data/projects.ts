@@ -13,7 +13,7 @@ export const projects: Project[] = [
     image: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80',
     description: '用于展示个人项目、技能与联系方式的响应式网站。',
     techStack: ['React', 'TypeScript', 'Tailwind CSS', 'Vite'],
-    link: 'https://snow-projects.vercel.app/',
+    link: 'https://snow-projects-blue.vercel.app/',
   },
   {
     name: '任务管理应用',
