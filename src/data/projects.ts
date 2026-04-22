@@ -33,4 +33,12 @@ export const projects: Project[] = [
     techStack: ["React", "TypeScript", "Vite", "Markdown"],
     link: "https://markdown-note-nu.vercel.app/",
   },
+  {
+    name: "番茄钟应用",
+    image:
+      "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=80",
+    description: "一个基于 React + TypeScript + Vite 的番茄钟应用。",
+    techStack: ["React", "TypeScript", "Vite"],
+    link: "https://pomodoro-iota-lovat.vercel.app/",
+  },
 ];
