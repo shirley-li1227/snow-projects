@@ -96,4 +96,23 @@ export const projects: Project[] = [
     ],
     link: "https://writing-assistant-mu.vercel.app/",
   },
+  {
+    name: "AI 图片生成器",
+    category: "AI应用",
+    image:
+      "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "一个基于 React + TypeScript + Vite + Tailwind CSS 的 AI 图片生成应用，支持智谱 AI 文生图、提示词优化、瀑布流历史记录、详情弹窗与图片下载。",
+    techStack: [
+      "React 18",
+      "TypeScript",
+      "Vite 5",
+      "Tailwind CSS",
+      "LocalStorage",
+      "智谱 AI API",
+      "chat/completions",
+      "images/generations",
+    ],
+    link: "https://image-generator-ten-psi.vercel.app/",
+  },
 ];
