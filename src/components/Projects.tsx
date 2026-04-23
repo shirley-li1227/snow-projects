@@ -4,6 +4,18 @@ import { useTranslation } from 'react-i18next'
 export function Projects() {
   const { t } = useTranslation()
   const categories = ['个人工具', 'AI应用', '全栈应用', '小程序'] as const
+  const categoryTitleColorMap: Record<(typeof categories)[number], string> = {
+    个人工具: 'text-cyan-300',
+    AI应用: 'text-fuchsia-300',
+    全栈应用: 'text-emerald-300',
+    小程序: 'text-amber-300',
+  }
+  const categoryIconMap: Record<(typeof categories)[number], string> = {
+    个人工具: '🧰',
+    AI应用: '🤖',
+    全栈应用: '🧩',
+    小程序: '📱',
+  }
 
   return (
     <section id="projects" className="py-10 sm:py-14">
@@ -14,7 +26,12 @@ export function Projects() {
 
           return (
             <div key={category}>
-              <h3 className="mb-4 text-xl font-medium text-[var(--fg)]">{category}</h3>
+              <h3 className={`mb-4 text-xl font-medium ${categoryTitleColorMap[category]}`}>
+                <span className="inline-flex items-center gap-2">
+                  <span aria-hidden="true">{categoryIconMap[category]}</span>
+                  <span>{category}</span>
+                </span>
+              </h3>
               <div className="grid gap-6 sm:grid-cols-2">
                 {/* 项目卡片列表：展示截图、标题、描述与技术栈标签 */}
                 {categoryProjects.map((project) => (
