@@ -1,6 +1,7 @@
 export type Project = {
   name: string;
   category: "个人工具" | "AI应用" | "全栈应用" | "小程序";
+  version: string;
   image: string;
   description: string;
   techStack: string[];
@@ -20,6 +21,7 @@ export const projects: Project[] = [
   {
     name: "任务管理应用",
     category: "个人工具",
+    version: "v1.0.1",
     image:
       "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1200&q=80",
     description: "支持任务分类、进度追踪与状态筛选的前端应用。",
@@ -29,6 +31,7 @@ export const projects: Project[] = [
   {
     name: "Markdown 笔记应用",
     category: "个人工具",
+    version: "v1.0.1",
     image:
       "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80",
     description:
@@ -39,6 +42,7 @@ export const projects: Project[] = [
   {
     name: "番茄钟应用",
     category: "个人工具",
+    version: "v1.0.1",
     image:
       "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=80",
     description: "一个基于 React + TypeScript + Vite 的番茄钟应用。",
@@ -48,6 +52,7 @@ export const projects: Project[] = [
   {
     name: "移动端天气应用",
     category: "个人工具",
+    version: "v1.0.1",
     image:
       "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?auto=format&fit=crop&w=1200&q=80",
     description:
@@ -58,6 +63,7 @@ export const projects: Project[] = [
   {
     name: "AI聊天助手",
     category: "AI应用",
+    version: "v1.0.1",
     image:
       "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
     description:
@@ -76,6 +82,7 @@ export const projects: Project[] = [
   {
     name: "智能写作应用",
     category: "AI应用",
+    version: "v1.0.1",
     image:
       "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
     description:
@@ -99,6 +106,7 @@ export const projects: Project[] = [
   {
     name: "AI 图片生成器",
     category: "AI应用",
+    version: "v1.0.1",
     image:
       "https://images.unsplash.com/photo-1547891654-e66ed7ebb968?auto=format&fit=crop&w=1200&q=80",
     description:

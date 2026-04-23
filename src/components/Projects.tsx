@@ -16,13 +16,21 @@ export function Projects() {
     全栈应用: '🧩',
     小程序: '📱',
   }
-  const getAutoPreviewImage = (link: string, fallbackImage: string) => {
+  const getAutoPreviewImage = (
+    link: string,
+    fallbackImage: string,
+    version: string,
+  ) => {
     if (!link || link === '#') {
       return fallbackImage
     }
 
+    // 将版本参数注入到目标站点 URL，再交给截图服务，尽可能触发重新抓取。
+    const separator = link.includes('?') ? '&' : '?'
+    const versionedTargetUrl = `${link}${separator}snapshot_version=${encodeURIComponent(version)}`
+
     // 优先加载自动网页截图，失败时由 onError 回退到项目原图。
-    return `https://s.wordpress.com/mshots/v1/${encodeURIComponent(link)}?w=1200`
+    return `https://s.wordpress.com/mshots/v1/${encodeURIComponent(versionedTargetUrl)}?w=1200`
   }
 
   return (
@@ -48,7 +56,7 @@ export function Projects() {
                     className="group overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--card)] transition hover:-translate-y-1 hover:border-fuchsia-400/40"
                   >
                     <img
-                      src={getAutoPreviewImage(project.link, project.image)}
+                      src={getAutoPreviewImage(project.link, project.image, project.version)}
                       alt={project.name}
                       loading="lazy"
                       onError={(event) => {
