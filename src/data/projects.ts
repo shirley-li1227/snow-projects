@@ -8,14 +8,14 @@ export type Project = {
 
 // 项目列表数据，后续可以直接在这里扩展作品
 export const projects: Project[] = [
-  {
-    name: "作品集",
-    image:
-      "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
-    description: "用于展示个人项目、技能与联系方式的响应式网站。",
-    techStack: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-    link: "https://snow-projects-blue.vercel.app/",
-  },
+  // {
+  //   name: "作品集",
+  //   image:
+  //     "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80",
+  //   description: "用于展示个人项目、技能与联系方式的响应式网站。",
+  //   techStack: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+  //   link: "https://snow-projects-blue.vercel.app/",
+  // },
   {
     name: "任务管理应用",
     image:
@@ -49,5 +49,22 @@ export const projects: Project[] = [
       "一个基于 React + TypeScript + Vite 的移动端风格天气应用，支持城市查询、定位天气、未来 5 天趋势和收藏城市快捷查询。天气数据：OpenWeatherMap API。",
     techStack: ["React", "TypeScript", "Vite", "OpenWeatherMap API"],
     link: "https://weather-one-smoky.vercel.app/",
+  },
+  {
+    name: "AI聊天助手",
+    image:
+      "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "一个 AI 聊天助手，使用 React + TypeScript + Vite 作为前端框架，Tailwind CSS 编写样式。通过调用大模型 API 实现智能对话，对话历史使用 LocalStorage 保存，并使用 react-markdown 渲染 AI 回复内容。",
+    techStack: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "LLM API",
+      "LocalStorage",
+      "react-markdown",
+    ],
+    link: "https://ai-chat-teal-two.vercel.app/",
   },
 ];
