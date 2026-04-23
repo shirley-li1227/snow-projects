@@ -73,4 +73,27 @@ export const projects: Project[] = [
     ],
     link: "https://ai-chat-teal-two.vercel.app/",
   },
+  {
+    name: "智能写作应用",
+    category: "AI应用",
+    image:
+      "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "一个基于 React + TypeScript + Express 的智能写作应用，提供 6 种写作模式、流式生成、Markdown/GFM 渲染、历史记录管理与一键复制，支持 temperature 与 max_tokens 高级参数调节。",
+    techStack: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "react-markdown",
+      "remark-gfm",
+      "Express",
+      "CORS",
+      "dotenv",
+      "concurrently",
+      "LocalStorage",
+      "智谱 AI API",
+    ],
+    link: "https://writing-assistant-mu.vercel.app/",
+  },
 ];
