@@ -16,6 +16,14 @@ export function Projects() {
     全栈应用: '🧩',
     小程序: '📱',
   }
+  const getAutoPreviewImage = (link: string, fallbackImage: string) => {
+    if (!link || link === '#') {
+      return fallbackImage
+    }
+
+    // 优先加载自动网页截图，失败时由 onError 回退到项目原图。
+    return `https://s.wordpress.com/mshots/v1/${encodeURIComponent(link)}?w=1200`
+  }
 
   return (
     <section id="projects" className="py-10 sm:py-14">
@@ -40,10 +48,14 @@ export function Projects() {
                     className="group overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--card)] transition hover:-translate-y-1 hover:border-fuchsia-400/40"
                   >
                     <img
-                      src={project.image}
+                      src={getAutoPreviewImage(project.link, project.image)}
                       alt={project.name}
                       loading="lazy"
-                      className="h-48 w-full object-cover transition duration-500 group-hover:scale-105"
+                      onError={(event) => {
+                        event.currentTarget.onerror = null
+                        event.currentTarget.src = project.image
+                      }}
+                      className="h-48 w-full object-cover object-top transition duration-500 group-hover:scale-105"
                     />
                     <div className="p-5">
                       <h4 className="text-lg font-medium text-[var(--fg)]">{project.name}</h4>
