@@ -123,4 +123,22 @@ export const projects: Project[] = [
     ],
     link: "https://image-generator-ten-psi.vercel.app/",
   },
+  {
+    name: "语音识别助手",
+    category: "AI应用",
+    version: "v1.0.1",
+    image:
+      "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "一个基于 React + TypeScript 的中文语音转写应用，支持浏览器录音、智谱 ASR 自动识别、可编辑结果和历史会话管理。",
+    techStack: [
+      "React 18",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "LocalStorage",
+      "智谱 AI（GLM-ASR-2512）",
+    ],
+    link: "https://speech-recognition-teal.vercel.app/",
+  },
 ];
