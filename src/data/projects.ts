@@ -104,6 +104,30 @@ export const projects: Project[] = [
     link: "https://writing-assistant-b5z.pages.dev/",
   },
   {
+    name: "个人技术博客",
+    category: "全栈应用",
+    version: "v1.0.0",
+    image:
+      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "个人博客全栈应用：React + Vite 前端与 Express API；本地使用 SQLite（better-sqlite3），线上运行在 Cloudflare Workers + D1。支持用户注册与登录（JWT）、个人中心，以及文章的发布/编辑/删除、草稿与正式发布、列表分页、分类与关键词、浏览量，以及点赞与收藏。",
+    techStack: [
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "React Router",
+      "Axios",
+      "react-markdown",
+      "Express 5",
+      "JWT",
+      "bcryptjs",
+      "SQLite",
+      "Cloudflare Workers",
+      "D1",
+    ],
+    link: "https://personal-blog.moningmo.workers.dev/",
+  },
+  {
     name: "AI 图片生成器",
     category: "AI应用",
     version: "v1.0.1",
