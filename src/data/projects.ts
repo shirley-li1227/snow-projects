@@ -26,7 +26,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?auto=format&fit=crop&w=1200&q=80",
     description: "支持任务分类、进度追踪与状态筛选的前端应用。",
     techStack: ["React", "TypeScript", "Framer Motion"],
-    link: "https://todo-list-xi-topaz.vercel.app/",
+    link: "https://todo-list-afm.pages.dev/",
   },
   {
     name: "Markdown 笔记应用",
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     description:
       "一个基于 React + TypeScript + Vite 构建的 Markdown 笔记应用，支持笔记管理、实时预览和代码高亮，适合学习记录、技术文档草稿和日常笔记整理。",
     techStack: ["React", "TypeScript", "Vite", "Markdown"],
-    link: "https://markdown-note-nu.vercel.app/",
+    link: "https://markdown-note-8lo.pages.dev/",
   },
   {
     name: "番茄钟应用",
@@ -47,7 +47,7 @@ export const projects: Project[] = [
       "https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=1200&q=80",
     description: "一个基于 React + TypeScript + Vite 的番茄钟应用。",
     techStack: ["React", "TypeScript", "Vite"],
-    link: "https://pomodoro-iota-lovat.vercel.app/",
+    link: "https://pomodoro-b5a.pages.dev/",
   },
   {
     name: "移动端天气应用",
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     description:
       "一个基于 React + TypeScript + Vite 的移动端风格天气应用，支持城市查询、定位天气、未来 5 天趋势和收藏城市快捷查询。天气数据：OpenWeatherMap API。",
     techStack: ["React", "TypeScript", "Vite", "OpenWeatherMap API"],
-    link: "https://weather-one-smoky.vercel.app/",
+    link: "https://weather-7u1.pages.dev/",
   },
   {
     name: "AI聊天助手",
@@ -77,7 +77,7 @@ export const projects: Project[] = [
       "LocalStorage",
       "react-markdown",
     ],
-    link: "https://ai-chat-teal-two.vercel.app/",
+    link: "https://ai-chat-6bd.pages.dev/",
   },
   {
     name: "智能写作应用",
@@ -101,7 +101,7 @@ export const projects: Project[] = [
       "LocalStorage",
       "智谱 AI API",
     ],
-    link: "https://writing-assistant-mu.vercel.app/",
+    link: "https://writing-assistant-b5z.pages.dev/",
   },
   {
     name: "AI 图片生成器",
@@ -121,7 +121,7 @@ export const projects: Project[] = [
       "chat/completions",
       "images/generations",
     ],
-    link: "https://image-generator-ten-psi.vercel.app/",
+    link: "https://image-generator-ceq.pages.dev/",
   },
   {
     name: "语音识别助手",
@@ -139,6 +139,6 @@ export const projects: Project[] = [
       "LocalStorage",
       "智谱 AI（GLM-ASR-2512）",
     ],
-    link: "https://speech-recognition-teal.vercel.app/",
+    link: "https://speech-recognition-1ca.pages.dev/",
   },
 ];
