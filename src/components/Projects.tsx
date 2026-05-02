@@ -45,7 +45,9 @@ export function Projects() {
               <h3 className={`mb-4 text-xl font-medium ${categoryTitleColorMap[category]}`}>
                 <span className="inline-flex items-center gap-2">
                   <span aria-hidden="true">{categoryIconMap[category]}</span>
-                  <span>{category}</span>
+                  <span>
+                    {category === '全栈应用' ? `${category}（需要vpn访问）` : category}
+                  </span>
                 </span>
               </h3>
               <div className="grid gap-6 sm:grid-cols-2">

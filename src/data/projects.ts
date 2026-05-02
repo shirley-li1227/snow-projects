@@ -103,30 +103,7 @@ export const projects: Project[] = [
     ],
     link: "https://writing-assistant-b5z.pages.dev/",
   },
-  {
-    name: "个人技术博客",
-    category: "全栈应用",
-    version: "v1.0.0",
-    image:
-      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
-    description:
-      "个人博客全栈应用：React + Vite 前端与 Express API；本地使用 SQLite（better-sqlite3），线上运行在 Cloudflare Workers + D1。支持用户注册与登录（JWT）、个人中心，以及文章的发布/编辑/删除、草稿与正式发布、列表分页、分类与关键词、浏览量，以及点赞与收藏。",
-    techStack: [
-      "React 19",
-      "TypeScript",
-      "Vite",
-      "React Router",
-      "Axios",
-      "react-markdown",
-      "Express 5",
-      "JWT",
-      "bcryptjs",
-      "SQLite",
-      "Cloudflare Workers",
-      "D1",
-    ],
-    link: "https://personal-blog.moningmo.workers.dev/",
-  },
+  
   {
     name: "AI 图片生成器",
     category: "AI应用",
@@ -164,5 +141,56 @@ export const projects: Project[] = [
       "智谱 AI（GLM-ASR-2512）",
     ],
     link: "https://speech-recognition-1ca.pages.dev/",
+  },
+  {
+    name: "个人技术博客",
+    category: "全栈应用",
+    version: "v1.0.0",
+    image:
+      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "个人博客全栈应用：React + Vite 前端与 Express API；本地使用 SQLite（better-sqlite3），线上运行在 Cloudflare Workers + D1。支持用户注册与登录（JWT）、个人中心，以及文章的发布/编辑/删除、草稿与正式发布、列表分页、分类与关键词、浏览量，以及点赞与收藏。",
+    techStack: [
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "React Router",
+      "Axios",
+      "react-markdown",
+      "Express 5",
+      "JWT",
+      "bcryptjs",
+      "SQLite",
+      "Cloudflare Workers",
+      "D1",
+    ],
+    link: "https://personal-blog.moningmo.workers.dev/",
+  },
+  {
+    name: "QA 社区",
+    category: "全栈应用",
+    version: "v1.0.0",
+    image:
+      "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "轻量问答社区：支持提问与回答（Markdown）、点赞、采纳最佳答案、标签筛选与积分体系。本地开发为 React 前端 + Express，数据通过 sql.js 持久化 SQLite（语法与 Cloudflare D1 兼容）；生产环境由单个 Cloudflare Worker 托管静态站点与 `/api/*` API（`cf-worker/` + Hono + D1）。含注册登录与 JWT、问题列表（最新/热门/未解决）、「我的问题」、积分规则（发布/回答/获赞/采纳及取消点赞回退）等。",
+    techStack: [
+      "React 18",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "React Router",
+      "react-markdown",
+      "Express",
+      "JWT",
+      "bcryptjs",
+      "sql.js",
+      "SQLite",
+      "Cloudflare Workers",
+      "Hono",
+      "D1",
+      "jsonwebtoken",
+    ],
+    link: "https://qa-community.moningmo.workers.dev/",
   },
 ];
