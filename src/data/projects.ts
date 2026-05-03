@@ -193,4 +193,29 @@ export const projects: Project[] = [
     ],
     link: "https://qa-community.moningmo.workers.dev/",
   },
+  {
+    name: "project-helper（项目学习助手）",
+    category: "全栈应用",
+    version: "v1.0.0",
+    image:
+      "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "基于 GitHub 仓库地址在线拉取目录与关键源码（不克隆到本地），通过 GitHub REST API + 智谱 GLM（OpenAI 兼容接口）生成通俗中文报告；支持 SSE 实时进度、D1/KV 数据缓存，以及基于仓库内容的智能问答与流式回答。",
+    techStack: [
+      "Vue 3",
+      "Vite",
+      "TypeScript",
+      "marked",
+      "highlight.js",
+      "Cloudflare Workers",
+      "Hono",
+      "Cloudflare D1",
+      "Cloudflare KV",
+      "Wrangler CLI",
+      "GitHub REST API",
+      "智谱 GLM",
+      "SSE",
+    ],
+    link: "https://project-helper.moningmo.workers.dev/",
+  },
 ];
