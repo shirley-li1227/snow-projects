@@ -218,4 +218,26 @@ export const projects: Project[] = [
     ],
     link: "https://project-helper.moningmo.workers.dev/",
   },
+  {
+    name: "online-mall（Mini 在线商城）",
+    category: "全栈应用",
+    version: "v1.0.0",
+    image:
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "Mini 在线商城示例：前后端同域部署，Cloudflare Worker 同时托管静态资源与 `/api`。后端基于 Hono + D1（SQLite 兼容），会话使用 KV + HttpOnly Cookie，实现轻量但完整的电商闭环。",
+    techStack: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Cloudflare Workers",
+      "Hono",
+      "Cloudflare D1",
+      "Cloudflare KV",
+      "HttpOnly Cookie",
+      "Wrangler CLI",
+    ],
+    link: "https://online-mall.moningmo.workers.dev/",
+  },
 ];
