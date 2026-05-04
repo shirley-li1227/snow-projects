@@ -80,14 +80,37 @@ export function Projects() {
                           </span>
                         ))}
                       </div>
-                      <a
-                        href={project.link}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="mt-4 inline-flex rounded-md bg-gradient-to-r from-fuchsia-500 to-cyan-400 px-4 py-2 text-sm font-medium text-white"
-                      >
-                        {t('projects.view')}
-                      </a>
+                      <div className="mt-4 flex flex-wrap gap-3">
+                        {/* 小程序无线上访问入口，不展示「查看项目」 */}
+                        {project.category !== '小程序' && (
+                          <a
+                            href={project.link}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex rounded-md bg-gradient-to-r from-fuchsia-500 to-cyan-400 px-4 py-2 text-sm font-medium text-white"
+                          >
+                            {t('projects.view')}
+                          </a>
+                        )}
+                        {project.sourceLink?.trim() ? (
+                          <a
+                            href={project.sourceLink.trim()}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="inline-flex rounded-md border border-cyan-300/40 bg-cyan-300/5 px-4 py-2 text-sm font-medium text-cyan-100 transition hover:border-fuchsia-400/50 hover:bg-fuchsia-500/10"
+                          >
+                            {t('projects.viewSource')}
+                          </a>
+                        ) : (
+                          <span
+                            className="inline-flex cursor-not-allowed rounded-md border border-[var(--border)] px-4 py-2 text-sm font-medium text-[var(--muted)] opacity-60"
+                            title={t('projects.sourcePending')}
+                            aria-disabled="true"
+                          >
+                            {t('projects.viewSource')}
+                          </span>
+                        )}
+                      </div>
                     </div>
                   </article>
                 ))}

@@ -6,6 +6,8 @@ export type Project = {
   description: string;
   techStack: string[];
   link: string;
+  /** GitHub 仓库地址，新标签页打开；未配置时不展示可点击的「查看源码」 */
+  sourceLink?: string;
 };
 
 // 项目列表数据，后续可以直接在这里扩展作品
@@ -27,6 +29,7 @@ export const projects: Project[] = [
     description: "支持任务分类、进度追踪与状态筛选的前端应用。",
     techStack: ["React", "TypeScript", "Framer Motion"],
     link: "https://todo-list-afm.pages.dev/",
+    sourceLink: "https://github.com/shirley-li1227/todo-list",
   },
   {
     name: "Markdown 笔记应用",
@@ -38,6 +41,7 @@ export const projects: Project[] = [
       "一个基于 React + TypeScript + Vite 构建的 Markdown 笔记应用，支持笔记管理、实时预览和代码高亮，适合学习记录、技术文档草稿和日常笔记整理。",
     techStack: ["React", "TypeScript", "Vite", "Markdown"],
     link: "https://markdown-note-8lo.pages.dev/",
+    sourceLink: "https://github.com/shirley-li1227/markdown-note",
   },
   {
     name: "番茄钟应用",
@@ -48,6 +52,7 @@ export const projects: Project[] = [
     description: "一个基于 React + TypeScript + Vite 的番茄钟应用。",
     techStack: ["React", "TypeScript", "Vite"],
     link: "https://pomodoro-b5a.pages.dev/",
+    sourceLink: "https://github.com/shirley-li1227/pomodoro",
   },
   {
     name: "移动端天气应用",
@@ -59,6 +64,7 @@ export const projects: Project[] = [
       "一个基于 React + TypeScript + Vite 的移动端风格天气应用，支持城市查询、定位天气、未来 5 天趋势和收藏城市快捷查询。天气数据：OpenWeatherMap API。",
     techStack: ["React", "TypeScript", "Vite", "OpenWeatherMap API"],
     link: "https://weather-7u1.pages.dev/",
+    sourceLink: "https://github.com/shirley-li1227/weather",
   },
   {
     name: "AI聊天助手",
@@ -78,6 +84,7 @@ export const projects: Project[] = [
       "react-markdown",
     ],
     link: "https://ai-chat-6bd.pages.dev/",
+    sourceLink: "https://github.com/shirley-li1227/ai-chat",
   },
   {
     name: "智能写作应用",
@@ -102,6 +109,7 @@ export const projects: Project[] = [
       "智谱 AI API",
     ],
     link: "https://writing-assistant-b5z.pages.dev/",
+    sourceLink: "https://github.com/shirley-li1227/writing-assistant",
   },
   
   {
@@ -123,6 +131,7 @@ export const projects: Project[] = [
       "images/generations",
     ],
     link: "https://image-generator-ceq.pages.dev/",
+    sourceLink: "https://github.com/shirley-li1227/image-generator",
   },
   {
     name: "语音识别助手",
@@ -141,6 +150,7 @@ export const projects: Project[] = [
       "智谱 AI（GLM-ASR-2512）",
     ],
     link: "https://speech-recognition-1ca.pages.dev/",
+    sourceLink: "https://github.com/shirley-li1227/speech-recognition",
   },
   {
     name: "个人技术博客",
@@ -165,6 +175,7 @@ export const projects: Project[] = [
       "D1",
     ],
     link: "https://personal-blog.moningmo.workers.dev/",
+    sourceLink: "https://github.com/shirley-li1227/personal-blog",
   },
   {
     name: "QA 社区",
@@ -192,6 +203,7 @@ export const projects: Project[] = [
       "jsonwebtoken",
     ],
     link: "https://qa-community.moningmo.workers.dev/",
+    sourceLink: "https://github.com/shirley-li1227/QA-community",
   },
   {
     name: "project-helper（项目学习助手）",
@@ -217,6 +229,7 @@ export const projects: Project[] = [
       "SSE",
     ],
     link: "https://project-helper.moningmo.workers.dev/",
+    sourceLink: "https://github.com/shirley-li1227/project-helper",
   },
   {
     name: "online-mall（Mini 在线商城）",
@@ -239,5 +252,25 @@ export const projects: Project[] = [
       "Wrangler CLI",
     ],
     link: "https://online-mall.moningmo.workers.dev/",
+    sourceLink: "https://github.com/shirley-li1227/online-mall",
+  },
+  {
+    name: "记账小程序（accounting-miniapp）",
+    category: "小程序",
+    version: "v1.0.0",
+    image:
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "基于微信原生小程序的个人记账应用（无第三方 UI 框架），收支数据用 `wx.setStorageSync` / `wx.getStorageSync` 本地持久化。首页展示本月收入、支出与结余，账单按今天、昨天、更早分组，支持本月/全部/按日筛选、下拉刷新、点击进入编辑、左滑删除与快捷添加；「记一笔」支持收入/支出切换及金额、分类、备注与日期；独立「收支统计」页展示当前自然月的按日柱状图，以及支出与收入分类占比（环形图 + 图例）。图表使用 `canvas` type=\"2d\" 自绘。",
+    techStack: [
+      "微信小程序原生",
+      "TypeScript",
+      "Less",
+      "wx.setStorageSync",
+      "wx.getStorageSync",
+      "Canvas 2D",
+    ],
+    link: "#",
+    sourceLink: "https://github.com/shirley-li1227/accounting-miniapp",
   },
 ];
