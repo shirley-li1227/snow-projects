@@ -273,4 +273,24 @@ export const projects: Project[] = [
     link: "#",
     sourceLink: "https://github.com/shirley-li1227/accounting-miniapp",
   },
+  {
+    name: "习惯打卡小程序",
+    category: "小程序",
+    version: "v1.0.0",
+    image:
+      "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80",
+    description:
+      "基于微信原生小程序开发的习惯打卡应用，支持多项目打卡、周历查看、统计分析、项目详情日历与勋章展示。使用 WXML + WXSS + JS 构建页面，数据通过 `wx.getStorageSync` / `wx.setStorageSync` 本地持久化；日历由自定义组件与最近一周条组成，视觉采用深色基底 + 浅色渐变叠层，并定制导航与 Tab 风格。",
+    techStack: [
+      "微信小程序原生",
+      "WXML",
+      "WXSS",
+      "JavaScript",
+      "wx.getStorageSync",
+      "wx.setStorageSync",
+      "自定义日历组件",
+    ],
+    link: "#",
+    sourceLink: "https://github.com/shirley-li1227/check-in-miniapp",
+  },
 ];
